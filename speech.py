@@ -21,7 +21,7 @@ towfirs_array = [
     ["./src/audio/twofirst/unit6/", "Guess and tick", "16-guess-and-tick.mp3"],
     ["./src/audio/twofirst/unit6/", "What may be in the story?", "17-what-may-be.mp3"],
     ["./src/audio/twofirst/unit6/", "The Mid-Autumn Festival", "18-the-mid-autumn-festival.mp3"],
-    ["./src/audio/twofirst/unit6/", "The Mid‑Autumn Festivalis a traditional Chinesefestival.", "19-the-mid-autumn-estivalis.mp3"],
+    ["./src/audio/twofirst/unit6/", "The Mid‑Autumn Festival is a traditional Chinesefestival.", "19-the-mid-autumn-estivalis.mp3"],
     ["./src/audio/twofirst/unit6/", "Read and check", "20-read-and-check.mp3"],
     ["./src/audio/twofirst/unit6/", "We play with lanterns", "21-we-play-with-lanterns.mp3"],
     ["./src/audio/twofirst/unit6/", "Families have a big dinner together", "22-families-have-a.mp3"],
@@ -144,7 +144,7 @@ async def createAudioFile(arrays):
         ssml_text = arrays[i][1]
         if ssml_text == "":
             continue
-        communicate = edge_tts.Communicate(ssml_text, voice="en-GB-SoniaNeural", rate="+0%")
+        communicate = edge_tts.Communicate(ssml_text, voice="en-GB-SoniaNeural", rate="-40%")
         await communicate.save(arrays[i][0] + arrays[i][2])
         print(arrays[i][0] + "  "+ arrays[i][2])
 
