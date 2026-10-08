@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P47</title>
+
+    <link rel="stylesheet" href="../../../css/page.css">
+
+    <script type="text/javascript">
+        var path = "../../../audio/twofirst/";
+        function speak(audioPath){
+            const audio = document.getElementById("id-english");
+            audio.setAttribute("src", path + audioPath);
+
+            // 播放音频
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div class="book-page">
+        <div class="book-content">
+            <img src="../../../book/twofirst/unit6/p47.jpg" alt="">
+        </div>
+    </div>
+    <div class="hidden">
+        <audio id="id-english" src="" controls></audio>
+    </div>    
+
+    <div class="sentence" style="top:110px;left: 170px;">
+        <button class="word-btn"  onclick="speak('unit6/33-communicate.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 230px;left: 130px;">
+        <button class="word-btn"  onclick="speak('unit6/34-draw-and-say.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:330px;left: 630px;">
+        <button class="word-btn"  onclick="speak('unit6/35-this-is-my-mooncake.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:390px;left: 630px;">
+        <button class="word-btn"  onclick="speak('unit6/36-theres-a-rabbit.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1180px;left: 90px;">
+        <button class="word-btn"  onclick="speak('unit6/37-this-is-my-mooncake.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1230px;left: 90px;">
+        <button class="word-btn"  onclick="speak('unit6/38-theres-an.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 1660px;left: 390px;">
+        <button class="word-btn"  onclick="speak('unit6/39-what-kind-of.mp3')"></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import "common.css";
+
+.header{
+    position: relative;
+    width: 1080px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(153, 153, 231);
+    text-align: center;
+    line-height: 50px;
+}
+
+.header span{
+    color: white;
+    font-size: large;
+}
+
+.page-index {
+    position: relative;
+    width: 1080px;
+    height: 1800px;
+    margin: 0 auto;
+    background-color: rgb(229, 234, 228);
+}
+
+.page-index .grade{
+    width: 1080px;
+    height: 50px;
+    background-color: rgb(204, 201, 199);
+    margin: 20px 0px;
+    
+    display:flex;
+    align-items:center;      /* 垂直居中 */ 
+}
+
+.page-index .grade .section{
+    height: 30px;
+    /* width: 100px; */
+    float: left;
+    display:flex;
+    justify-content:center; /* 水平居中 */
+    align-items:center;      /* 垂直居中 */ 
+    margin-left: 10px;
+}
+
+.page-index .grade .section a{
+    color: blue;    
+}
+
+
+.section .word-pages-index .word-page-index{
+    margin-left: 5px;
+}

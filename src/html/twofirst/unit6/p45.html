@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P45</title>
+
+    <link rel="stylesheet" href="../../../css/page.css">
+
+    <script type="text/javascript">
+        var path = "../../../audio/twofirst/";
+        function speak(audioPath){
+            const audio = document.getElementById("id-english");
+            audio.setAttribute("src", path + audioPath);
+
+            // 播放音频
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div class="book-page">
+        <div class="book-content">
+            <img src="../../../book/twofirst/unit6/p45.jpg" alt="">
+        </div>
+    </div>
+    <div class="hidden">
+        <audio id="id-english" src="" controls></audio>
+    </div>    
+
+    <div class="sentence" style="top: 635px;left: 110px;">
+        <button class="word-btn"  onclick="speak('unit6/21-we-play-with-lanterns.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 635px;left: 560px;">
+        <button class="word-btn"  onclick="speak('unit6/22-families-have-a.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 1260px;left: 110px;">
+        <button class="word-btn"  onclick="speak('unit6/23-we-eat-mooncakes-too.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1310px;left: 110px;">
+        <button class="word-btn"  onclick="speak('unit6/24-they-taste-good.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 1250px;left: 560px;">
+        <button class="word-btn"  onclick="speak('unit6/25-at-night-we.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1310px;left: 650px;">
+        <button class="word-btn"  onclick="speak('unit6/26-it-is-big-and-bright.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 1650px;left: 190px;">
+        <button class="word-btn"  onclick="speak('unit6/27-what-do-you.mp3')"></button>
+    </div>
+</body>
+</html>

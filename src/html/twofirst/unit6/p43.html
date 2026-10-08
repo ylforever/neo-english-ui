@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P43</title>
+
+    <link rel="stylesheet" href="../../../css/page.css">
+
+    <script type="text/javascript">
+        var path = "../../../audio/twofirst/";
+        function speak(audioPath){
+            const audio = document.getElementById("id-english");
+            audio.setAttribute("src", path + audioPath);
+
+            // 播放音频
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div class="book-page">
+        <div class="book-content">
+            <img src="../../../book/twofirst/unit6/p43.jpg" alt="">
+        </div>
+    </div>
+    <div class="hidden">
+        <audio id="id-english" src="" controls></audio>
+    </div>    
+
+    <div class="sentence" style="top:130px;left: 170px;">
+        <button class="word-btn"  onclick="speak('unit6/2-ready-go.mp3')"></button>
+    </div>
+
+    <div class="sentence" style="top:240px;left: 170px;">
+        <button class="word-btn"  onclick="speak('unit6/3-listen-then-point-and-say.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:670px;left: 170px;">
+        <button class="word-btn"  onclick="speak('unit6/4-play-with-lanterns.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:670px;left: 620px;">
+        <button class="word-btn"  onclick="speak('unit6/5-eat-mooncakes.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1105px;left: 280px;">
+        <button class="word-btn"  onclick="speak('unit6/6-solve-riddles.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1095px;left: 600px;">
+        <button class="word-btn"  onclick="speak('unit6/7-look at the moon.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1200px;left: 70px;">
+        <button class="word-btn"  onclick="speak('unit6/8-Listen-and-chant.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1290px;left: 70px;">
+        <button class="word-btn"  onclick="speak('unit6/9-read-and-guess.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1370px;left: 440px;">
+        <button class="word-btn"  onclick="speak('unit6/10-sometimes-its-a-c.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1420px;left: 440px;">
+        <button class="word-btn"  onclick="speak('unit6/11-sometimes-its-an-o.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1480px;left: 440px;">
+        <button class="word-btn"  onclick="speak('unit6/12-sometimes-you-can-see-it.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1530px;left: 440px;">
+        <button class="word-btn"  onclick="speak('unit6/13-but-sometimes-you-cant.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1585px;left: 440px;">
+        <button class="word-btn"  onclick="speak('unit6/14-what-is-it.mp3')"></button>
+    </div>
+
+</body>
+</html>

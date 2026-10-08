@@ -1,0 +1,87 @@
+@import "reset.css";
+
+/*公共样式*/
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.hidden{
+    display: none;
+}
+
+.lesson-mgmt-button{
+    width: 70px;
+    background-color: #40d0edff;
+    color: white;
+    border-radius: 3px;
+}
+
+.email {
+    width: 300px;
+    text-align: center;
+}
+
+.icon-bitianxinghao{
+    font-size: 8px;
+    color: red;
+}
+
+/*弹出对话框公共样式设置开始*/
+.dialog-item{
+    height: 25px;
+    margin: 20px 5px;
+    box-sizing: border-box;
+}
+
+.dialog-item .atttribute-name{
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.dialog-item input{
+    width: 200px;
+    height: 25px;
+}
+
+.dialog-item button{
+    margin-right: 10px;
+}
+
+.dialog-title{
+    background-color: rgb(0,100,200);
+    color: white;
+    text-indent: 0.5em;
+}
+
+/*弹出对话框公共样式设置结束*/
+
+/*表格样式设置开始*/
+.lesson-tr{
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.lesson-tr th{
+    background-color: #EFEFEF;
+}
+
+.lesson-tr:nth-child(odd) {
+    background-color: #efefef;
+}
+
+.lesson-tr button{
+    background-color: #40d0edff;
+    color: white;
+}
+
+/*表格样式设置结束*/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P46</title>
+
+    <link rel="stylesheet" href="../../../css/page.css">
+
+    <script type="text/javascript">
+        var path = "../../../audio/twofirst/";
+        function speak(audioPath){
+            const audio = document.getElementById("id-english");
+            audio.setAttribute("src", path + audioPath);
+
+            // 播放音频
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div class="book-page">
+        <div class="book-content">
+            <img src="../../../book/twofirst/unit6/p46.jpg" alt="">
+        </div>
+    </div>
+    <div class="hidden">
+        <audio id="id-english" src="" controls></audio>
+    </div>    
+
+    <div class="sentence" style="top: 190px;left: 190px;">
+        <button class="word-btn"  onclick="speak('unit6/28-read-and-tick.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 260px;left: 200px;">
+        <button class="word-btn"  onclick="speak('unit6/29-what-do-people.mp3')"></button>
+    </div>
+    <div class="sentence" style="top: 1240px;left: 200px;">
+        <button class="word-btn"  onclick="speak('unit6/30-think-and-say.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1311px;left: 200px;">
+        <button class="word-btn"  onclick="speak('unit6/31-what-do-you.mp3')"></button>
+    </div>
+    <div class="sentence" style="top:1420px;left: 360px;">
+        <button class="word-btn"  onclick="speak('unit6/32-i-with-my.mp3')"></button>
+    </div>
+</body>
+</html>
