@@ -4,14 +4,14 @@
 .book-page {
     position: relative;
     width: 800px;
-    height: 600px;
+    height: 1000px;
     margin: 0 auto;
 }
 
 .book-page-frame {
     position: relative;
     width: 800px;
-    height: 600px;
+    height: 1000px;
     margin: 10px auto;
     display: flex;
     justify-content:center; /* 水平居中 */
@@ -23,7 +23,7 @@
 .book-content img{
     position: relative;
     width: 800px;
-    height: 600px;
+    height: 1000px;
     margin: 0 auto;
 }
 
@@ -31,9 +31,9 @@
 
 /*课本内容样式设置开始*/
 .sentence{
-    width: 200px;
-    height: 25px;
-    background-color: rgb(0,0,255,0.1);
+    width: 100px;
+    height: 15px;
+    background-color: rgba(19, 6, 159, 0.2);
     position: absolute;
 }
 /*课本内容样式设置结束*/
@@ -111,9 +111,9 @@ iframe{
 }
 
 .word-btn {
-    width: 200px;
-    height: 25px;
-    background-color: rgb(0,0,255,0.1);
+    width: 100px;
+    height: 15px;
+    /* background-color: rgb(0,0,255,0.1); */
     border: none;
 }
 
