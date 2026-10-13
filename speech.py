@@ -64,7 +64,7 @@ towfirs_array = [
 
 ];
 
-# 【七年级上册】定义 生成语音文件的数据参数
+# 【七年级上册】单词生成语音文件的数据参数
 words_array = [
     ["./src/audio/sevenfirst/words/unit2/", "diary", "17-diary.mp3"],
     ["./src/audio/sevenfirst/words/unit2/", "project", "18-project.mp3"],
@@ -136,6 +136,43 @@ words_array = [
 
 ]
 
+# 七年级上册课本内容
+servenfirst_book_array = [
+    ["./src/audio/sevenfirst/unit2/", "Read the article about Li Hua's school day.", "1-read-the-article.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "My school day", "2-my-school-day.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "My name is Li Hua. ", "3-my-name-is.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I started junior high school this September. ", "4-i-started-junior-high.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I have a lot to say about my time there!", "5-i-have-a-lot.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "Classes start at 8:00 a.m.", "6-classes-start-at.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I have seven classes each day, four in the morning and three in the afternoon.", "7-i-have-seven-classes.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "Geography is a new subject in junior high.", "8-geography-is-a.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "The teacher sometimes teaches us by playing games. ", "9-the-teacher-sometimes.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "It's a great way to learn.", "10-its-a-great.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "Morning break starts at 9:40 a.m., and I run to the sports ground. ", "11-morning-break-start.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I often do some morning exercise or play a ball game with my friends. ", "12-i-often-do.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "The break ends at 10:10 a.m", "13-the-break-ends.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "We have a lunch break from 12:00 p.m. to 2:00 p.m.", "14-we-have-a.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "We go to the canteen for lunch.", "15-we-go-to.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "There are different foods I can choose from.", "16-there-are-different.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I really enjoy eating there!", "17-i-really-enjoy.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "After that, I usually go to the book corner in the classroom. ", "18-after-that.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I can always find something interesting to read.", "19-i-can-always.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "Classes end at 4:25 p.m., and many students take part in after‑school activities.", "20-classes-end-at.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I go to the Ping-pong Club with my friend Chen Ming. ", "21-i-go-to-the.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "We plan to take part in the school ping-pong game next month. ", "22-we-plan-to.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "We look forward to it and will practise very hard.", "23-we-look-forward.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "It's exciting to be a junior high student. ", "24-its-exciting.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "I have a good time at school, and I enjoy every minute of it.", "25-i-have-a.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "How short it is!", "26-how-short-it-is.mp3"],
+    ["./src/audio/sevenfirst/unit2/", "", ".mp3"],
+    ["./src/audio/sevenfirst/unit2/", "", ".mp3"],
+    ["./src/audio/sevenfirst/unit2/", "", ".mp3"],
+    ["./src/audio/sevenfirst/unit2/", "", ".mp3"],
+    ["./src/audio/sevenfirst/unit2/", "", ".mp3"],
+    ["./src/audio/sevenfirst/unit2/", "", ".mp3"],
+];
+
+
 # voice="en-GB-SoniaNeural" 英式发音
 # voice="en-US-JennyNeural" 美式发音
 
@@ -151,6 +188,11 @@ async def createAudioFile(arrays):
 async def run():
     # 创建七年级上册词语表音频文件 
     #await createAudioFile(words_array);
-    await createAudioFile(towfirs_array);
+    
+    # 七年级上册课文
+    await createAudioFile(servenfirst_book_array);
+    
+    # 二年级上册课本内容
+    # await createAudioFile(towfirs_array);
 
 asyncio.run(run())

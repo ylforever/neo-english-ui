@@ -85,3 +85,23 @@ button{
 }
 
 /*表格样式设置结束*/
+
+/*页头样式设置开始*/
+.header{
+    position: relative;
+    width: 1080px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(153, 153, 231);
+    text-align: left;
+    line-height: 50px;
+}
+
+.header span{
+    color: white;
+    font-size: large;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+/*页头样式设置结束*/

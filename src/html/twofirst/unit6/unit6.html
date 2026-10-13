@@ -6,12 +6,30 @@
     <title>Unit 6</title>
 
     <link rel="stylesheet" href="../../../css/page.css">
+
+    <script src="../../../script/util.js"></script>
+    <script src="../../../script/proxy.js"></script>
+    <script src="../../../script/login.js"></script>
 </head>
 <body>
-    <div class="book-page">
-        <div class="return-index-page">
+    <!--未登录则自动跳转到登录界面-->
+    <script>
+        if(!localStorage.getItem("jwt-token")){
+            window.location.href = "../../../login.html";
+        }
+    </script>
+
+    <div class="header">
+        <span>沪教版小学初中英语课本指读</span>
+        <div class="logout-btn float-right">
+            <button onclick="logout('../../../login.html')">注销</button>
+        </div>
+        <div class="return-index-page float-right">
             <a class="speech-a" href="../../../index.html">返回首页</a>
         </div>
+    </div>
+
+    <div class="book-page">
         <div class="book-page-frame">
             <iframe src="./p42.html" frameborder="3" scrolling="no">
             </iframe>

@@ -1,20 +1,5 @@
 @import "common.css";
 
-.header{
-    position: relative;
-    width: 1080px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: rgb(153, 153, 231);
-    text-align: center;
-    line-height: 50px;
-}
-
-.header span{
-    color: white;
-    font-size: large;
-}
-
 .page-index {
     position: relative;
     width: 1080px;
@@ -43,7 +28,7 @@
     margin-left: 10px;
 }
 
-.page-index .grade .section a{
+.page-index .grade .section .link{
     color: blue;    
 }
 

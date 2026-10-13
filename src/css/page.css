@@ -79,32 +79,32 @@ iframe{
 }
 
 .left-word{
-    width: 200px;
-    height: 25px;
+    width: 100px;
+    height: 15px;
     background-color: rgb(0,0,255,0.1);
     position: absolute;
     left: 133px;
 }
 
 .right-word{
-    width: 200px;
-    height: 25px;
+    width: 100px;
+    height: 15px;
     background-color: rgb(0,0,255,0.1);
     position: absolute;
     left: 563px;
 }
 
 .left-word-p146{
-    width: 200px;
-    height: 25px;
+    width: 100px;
+    height: 15px;
     background-color: rgb(0,0,255,0.1);
     position: absolute;
     left: 110px;
 }
 
 .right-word-p146{
-    width: 200px;
-    height: 25px;
+    width: 100px;
+    height: 15px;
     background-color: rgb(0,0,255,0.1);
     position: absolute;
     left: 540px;
@@ -117,16 +117,24 @@ iframe{
     border: none;
 }
 
-.speech-a{
-    color: blue;
-}
-
 .return-index-page{
     width: 100px;
     height: 30px;
     background-color: rgb(197, 16, 82);
     text-align: center;
     line-height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.logout-btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(197, 16, 82);
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 /*单词页面样式设置结束*/
