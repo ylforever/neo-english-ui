@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2</title>
+
+    <link rel="stylesheet" href="../../../css/page.css">
+
+    <script src="../../../script/util.js"></script>
+    <script src="../../../script/proxy.js"></script>
+    <script src="../../../script/login.js"></script>
+
+    <script type="text/javascript">
+        var path = "../../../audio/twofirst/";
+        function speak(audioPath){
+            const audio = document.getElementById("id-english");
+            audio.setAttribute("src", path + audioPath);
+
+            // 播放音频
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <!--未登录则自动跳转到登录界面-->
+    <script>
+        if(!localStorage.getItem("jwt-token")){
+            window.location.href = "../../../login.html";
+        }
+    </script>
+
+    <div class="header">
+        <span>沪教版小学初中英语课本指读</span>
+        <div class="logout-btn float-right">
+            <button onclick="logout('../../../login.html')">注销</button>
+        </div>
+        <div class="return-index-page float-right">
+            <a class="speech-a" href="../../../index.html">返回首页</a>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <audio id="id-english" src="" controls></audio>
+    </div>
+
+    <div class="book-page">
+        <!--课本第10页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p10.jpg" alt="">
+            </div>
+            <div class="sentence" style="top: 140px;left: 350px;">
+                <button class="word-btn"  onclick="speak('unit2/1-what-do-you.mp3')"></button>
+            </div>
+        </div>
+
+        <!--课本第11页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p11.jpg" alt="">
+            </div>
+            
+            <div class="sentence" style="top: 70px;left: 230px;">
+                <button class="word-btn"  onclick="speak('unit2/2-ready-go.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 120px;left: 150px;">
+                <button class="word-btn"  onclick="speak('unit2/3-listen-then-point.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 260px;left: 100px;">
+                <button class="word-btn"  onclick="speak('unit2/4-cute.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 190px;left: 330px;">
+                <button class="word-btn"  onclick="speak('unit2/5-young.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 240px;left: 340px;">
+                <button class="word-btn"  onclick="speak('unit2/6-old.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 200px;left: 650px;">
+                <button class="word-btn"  onclick="speak('unit2/7-this-is.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 330px;left: 440px;">
+                <button class="word-btn"  onclick="speak('unit2/8-aunt.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 360px;left: 560px;">
+                <button class="word-btn"  onclick="speak('unit2/9-cousin.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 320px;left: 650px;">
+                <button class="word-btn"  onclick="speak('unit2/10-uncle.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 530px;left: 100px;">
+                <button class="word-btn"  onclick="speak('unit2/11-listen-and-chant.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 580px;left: 100px;">
+                <button class="word-btn"  onclick="speak('unit2/12-look-point-and-say.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 640px;left: 310px;">
+                <button class="word-btn"  onclick="speak('unit2/13-marys-family.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 916px;left: 280px;">
+                <button class="word-btn"  onclick="speak('unit2/14-im-mary.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第12页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p12.jpg" alt="">
+            </div>
+
+            <div class="sentence" style="top: 50px;left: 150px;">
+                <button class="word-btn"  onclick="speak('unit2/15-guess-and-tick.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 90px;left: 150px;">
+                <button class="word-btn"  onclick="speak('unit2/16-who-is-uncle-bob.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 610px;left: 180px;">
+                <button class="word-btn"  onclick="speak('unit2/17-read-and-check.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 80px;left: 480px;">
+                <button class="word-btn"  onclick="speak('unit2/18-dans-story.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 70px;left: 660px;">
+                <button class="word-btn"  onclick="speak('unit2/19-at-uncle-bobs-party.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 340px;left: 670px;">
+                <button class="word-btn"  onclick="speak('unit2/20-who-is-he.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 498px;left: 552px;">
+                <button class="word-btn"  onclick="speak('unit2/21-hes-my-cousin-henry.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 570px;left: 630px;">
+                <button class="word-btn"  onclick="speak('unit2/22-is-she-your.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 790px;left: 630px;">
+                <button class="word-btn"  onclick="speak('unit2/23-no-shes-henry.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第13页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p13.jpg" alt="">
+            </div>
+
+            <div class="sentence" style="top: 87px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit2/24-look-here.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 250px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit2/25-cheese.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 43px;left: 505px;">
+                <button class="word-btn"  onclick="speak('unit2/25-is-that-your-uncle.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 375px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/26-hi-children.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 520px;left: 130px;">
+                <button class="word-btn"  onclick="speak('unit2/27-aunt-susan.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 520px;left: 280px;">
+                <button class="word-btn"  onclick="speak('unit2/28-mum.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 343px;left: 570px;">
+                <button class="word-btn"  onclick="speak('unit2/29-wheres-uncle.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 566px;left: 540px;">
+                <button class="word-btn"  onclick="speak('unit2/30-lets-look-for.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 600px;left: 190px;">
+                <button class="word-btn"  onclick="speak('unit2/31-hello-uncle-bob.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 630px;left: 190px;">
+                <button class="word-btn"  onclick="speak('unit2/32-this-party-is-great.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 834px;left: 200px;">
+                <button class="word-btn"  onclick="speak('unit2/33-lets-have-fun.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 800px;left: 530px;">
+                <button class="word-btn"  onclick="speak('unit2/34-cheese.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 914px;left: 300px;">
+                <button class="word-btn"  onclick="speak('unit2/35-what-is-fun.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第14页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p14.jpg" alt="">
+            </div>
+
+            <div class="sentence" style="top: 110px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/36-read-and-order.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 150px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/37-how-does-dan.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 670px;left: 170px;">
+                <button class="word-btn"  onclick="speak('unit2/38-role-play.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 740px;left: 240px;">
+                <button class="word-btn"  onclick="speak('unit2/39-who-is.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 855px;left: 140px;">
+                <button class="word-btn"  onclick="speak('unit2/40-hes-shes.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第15页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p15.jpg" alt="">
+            </div>
+
+            <div class="sentence" style="top: 70px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/41-communicate.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 130px;left: 70px;">
+                <button class="word-btn"  onclick="speak('unit2/42-draw-and-colour.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 220px;left: 320px;">
+                <button class="word-btn"  onclick="speak('unit2/43-guess-hes.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 180px;left: 260px;">
+                <button class="word-btn"  onclick="speak('unit2/43-who-is-he.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 290px;left: 250px;">
+                <button class="word-btn"  onclick="speak('unit2/44-is-he.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 333px;left: 330px;">
+                <button class="word-btn"  onclick="speak('unit2/45-yes-no.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 750px;left: 130px;">
+                <button class="word-btn"  onclick="speak('unit2/46-my-family.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 920px;left: 330px;">
+                <button class="word-btn"  onclick="speak('unit2/47-what-do-you-think.mp3')"></button>
+            </div>            
+        </div>
+
+        <!--第16页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p16.jpg" alt="">
+            </div>
+            
+            <div class="sentence" style="top: 80px;left: 290px;">
+                <button class="word-btn"  onclick="speak('unit2/48-extend.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 123px;left: 400px;">
+                <button class="word-btn"  onclick="speak('unit2/49-grandmas-bag.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 350px;left: 200px;">
+                <button class="word-btn"  onclick="speak('unit2/50-ken-the-dog.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 340px;left: 560px;">
+                <button class="word-btn"  onclick="speak('unit2/51-grandmas-bag.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 560px;left: 200px;">
+                <button class="word-btn"  onclick="speak('unit2/52-mum-throws.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 600px;left: 550px;">
+                <button class="word-btn"  onclick="speak('unit2/53-dad-runs-after.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 825px;left: 200px;">
+                <button class="word-btn"  onclick="speak('unit2/54-tom-throws.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 830px;left: 500px;">
+                <button class="word-btn"  onclick="speak('unit2/55-grandma-has-her.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 865px;left: 560px;">
+                <button class="word-btn"  onclick="speak('unit2/56-everyone-is-happy.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 900px;left: 240px;">
+                <button class="word-btn"  onclick="speak('unit2/57-what-do-you-like.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第17页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../../book/twofirst/unit2/p17.jpg" alt="">
+            </div>
+            
+            <div class="sentence" style="top: 70px;left: 20px;">
+                <button class="word-btn"  onclick="speak('unit2/58-sounds.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 150px;left: 20px;">
+                <button class="word-btn"  onclick="speak('unit2/59- am.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 180px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/60-sam-likes-jam.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 215px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/61-sam-likes-ham.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 245px;left: 160px;">
+                <button class="word-btn"  onclick="speak('unit2/62-sam-eats-bread.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 575px;left: 650px;">
+                <button class="word-btn"  onclick="speak('unit2/63-an.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 555px;left: 70px;">
+                <button class="word-btn"  onclick="speak('unit2/64-dan-turns-on.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 585px;left: 70px;">
+                <button class="word-btn"  onclick="speak('unit2/65-he-opens-a.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 615px;left: 70px;">
+                <button class="word-btn"  onclick="speak('unit2/66-he-puts-the.mp3')"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

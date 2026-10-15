@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2</title>
+
+    <link rel="stylesheet" href="../../css/page.css">
+
+    <script src="../../script/util.js"></script>
+    <script src="../../script/proxy.js"></script>
+    <script src="../../script/login.js"></script>
+
+    <script type="text/javascript">
+        var path = "../../audio/sevenfirst/";
+        function speak(audioPath){
+            const audio = document.getElementById("id-english");
+            audio.setAttribute("src", path + audioPath);
+
+            // 播放音频
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <!--未登录则自动跳转到登录界面-->
+    <script>
+        if(!localStorage.getItem("jwt-token")){
+            window.location.href = "../../login.html";
+        }
+    </script>
+
+    <div class="header">
+        <span>沪教版小学初中英语课本指读</span>
+        <div class="logout-btn float-right">
+            <button onclick="logout('../../login.html')">注销</button>
+        </div>
+        <div class="return-index-page float-right">
+            <a class="speech-a" href="../../index.html">返回首页</a>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <audio id="id-english" src="" controls></audio>
+    </div>
+
+    <div class="book-page">
+        <!--课本第37页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../book/sevenfirst/unit3/p37.jpg" alt="">
+            </div>
+            <div class="sentence" style="top: 130px;left: 140px;">
+                <button class="word-btn"  onclick="speak('unit3/1-read-the-article.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 155px;left: 350px;">
+                <button class="word-btn"  onclick="speak('unit3/2-the-four-seasons.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 190px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/3-there-are-four.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 210px;left: 80px;">
+                <button class="word-btn"  onclick="speak('unit3/4-spring.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 234px;left: 110px;">
+                <button class="word-btn"  onclick="speak('unit3/5-life-begins-again.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 234px;left: 350px;">
+                <button class="word-btn"  onclick="speak('unit3/6-the-snow-melts.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 250px;left: 310px;">
+                <button class="word-btn"  onclick="speak('unit3/7-warm-rain-falls.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 265px;left: 110px;">
+                <button class="word-btn"  onclick="speak('unit3/8-plants-start-to-grow.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 265px;left: 560px;">
+                <button class="word-btn"  onclick="speak('unit3/9-farmers-begin-to.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 285px;left: 310px;">
+                <button class="word-btn"  onclick="speak('unit3/10-It-is-a-time.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 302px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/11-it-is-exciting.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 334px;left: 90px;">
+                <button class="word-btn"  onclick="speak('unit3/12-Summer.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 357px;left: 100px;">
+                <button class="word-btn"  onclick="speak('unit3/13-summer-is-bright.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 357px;left: 350px;">
+                <button class="word-btn"  onclick="speak('unit3/14-the-weather-is.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 355px;left: 510px;">
+                <button class="word-btn"  onclick="speak('unit3/15-the-sun-shines-brightly.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 373px;left: 390px;">
+                <button class="word-btn"  onclick="speak('unit3/16-cicadas-sing-loudly.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 373px;left: 530px;">
+                <button class="word-btn"  onclick="speak('unit3/17-there-is-often.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 390px;left: 440px;">
+                <button class="word-btn"  onclick="speak('unit3/18-many-people-like.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 410px;left: 360px;">
+                <button class="word-btn"  onclick="speak('unit3/19-it-is-nice-to.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 460px;left: 90px;">
+                <button class="word-btn"  onclick="speak('unit3/20-autumn.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 482px;left: 140px;">
+                <button class="word-btn"  onclick="speak('unit3/21-autumn-is-beautiful.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 482px;left: 440px;">
+                <button class="word-btn"  onclick="speak('unit3/22-the-weather-is.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 500px;left: 190px;">
+                <button class="word-btn"  onclick="speak('unit3/23-in-autumn-everything.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 500px;left: 410px;">
+                <button class="word-btn"  onclick="speak('unit3/24-leaves-turn-brown.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 517px;left: 480px;">
+                <button class="word-btn"  onclick="speak('unit3/25-squirrels-gather-food.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 534px;left: 250px;">
+                <button class="word-btn"  onclick="speak('unit3/26-farmers-are-busy.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 534px;left: 530px;">
+                <button class="word-btn"  onclick="speak('unit3/27-it-is-great.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 587px;left: 90px;">
+                <button class="word-btn"  onclick="speak('unit3/28-winter.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 609px;left: 110px;">
+                <button class="word-btn"  onclick="speak('unit3/29-winter-is-peaceful.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 610px;left: 350px;">
+                <button class="word-btn"  onclick="speak('unit3/30-it-is-cold-and.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 626px;left: 230px;">
+                <button class="word-btn"  onclick="speak('unit3/31-bears-and-snakes.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 643px;left: 145px;">
+                <button class="word-btn"  onclick="speak('unit3/32-children-love-winter.mp3')"></button>
+            </div>
+        </div>
+
+        <!--课本第44页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../book/sevenfirst/unit3/p44.jpg" alt="">
+            </div>
+            
+            <div class="sentence" style="top: 520px;left: 280px;">
+                <button class="word-btn"  onclick="speak('unit3/33-my-favourite-season.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 548px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/34-i-live-in.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 568px;left: 280px;">
+                <button class="word-btn"  onclick="speak('unit3/35-the-trees-have.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 584px;left: 440px;">
+                <button class="word-btn"  onclick="speak('unit3/36-there-are-also.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 602px;left: 280px;">
+                <button class="word-btn"  onclick="speak('unit3/37-they-smell-really.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 622px;left: 130px;">
+                <button class="word-btn"  onclick="speak('unit3/38-the-best-thing.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 622px;left: 540px;">
+                <button class="word-btn"  onclick="speak('unit3/39-i-have-lots-of-time.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 640px;left: 350px;">
+                <button class="word-btn"  onclick="speak('unit3/40-i-enjoy-going-swimming.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 657px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/41-i-also-love.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 657px;left: 560px;">
+                <button class="word-btn"  onclick="speak('unit3/42-it-is-great.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 692px;left: 190px;">
+                <button class="word-btn"  onclick="speak('unit3/43-sometimes-i-go.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 692px;left: 540px;">
+                <button class="word-btn"  onclick="speak('unit3/44-i-like-to-build.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 730px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/45-summer-is-the-best.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第46页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../book/sevenfirst/unit3/p46.jpg" alt="">
+            </div>
+
+            <div class="sentence" style="top: 296px;left: 310px;">
+                <button class="word-btn"  onclick="speak('unit3/46-the-24-solar.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 346px;left: 140px;">
+                <button class="word-btn"  onclick="speak('unit3/47-the-months.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 365px;left: 490px;">
+                <button class="word-btn"  onclick="speak('unit3/48-in-fact-the.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 382px;left: 540px;">
+                <button class="word-btn"  onclick="speak('unit3/49-each-part-starts.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 400px;left: 390px;">
+                <button class="word-btn"  onclick="speak('unit3/50-these-solar-terms.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 440px;left: 150px;">
+                <button class="word-btn"  onclick="speak('unit3/51-the-start-of.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 458px;left: 470px;">
+                <button class="word-btn"  onclick="speak('unit3/52-each-of-the-seasons.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 474px;left: 550px;">
+                <button class="word-btn"  onclick="speak('unit3/53-the-solar-term.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 490px;left: 330px;">
+                <button class="word-btn"  onclick="speak('unit3/54-they-sometimes-move.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 516px;left: 140px;">
+                <button class="word-btn"  onclick="speak('unit3/55-the-24-solar-terms.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 516px;left: 480px;">
+                <button class="word-btn"  onclick="speak('unit3/56-for-example-they.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 533px;left: 440px;">
+                <button class="word-btn"  onclick="speak('unit3/57-the-solar-terms.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 550px;left: 490px;">
+                <button class="word-btn"  onclick="speak('unit3/58-people-celebrated-these.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 566px;left: 600px;">
+                <button class="word-btn"  onclick="speak('unit3/59-many-of-these-traditions.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 583px;left: 420px;">
+                <button class="word-btn"  onclick="speak('unit3/60-for-example-people.mp3')"></button>
+            </div>
+        </div>
+
+        <!--第48页-->
+        <div class="book-page-frame">
+            <div class="book-content">
+                <img src="../../book/sevenfirst/unit3/p48.jpg" alt="">
+            </div>
+
+            <div class="sentence" style="top: 249px;left: 250px;">
+                <button class="word-btn"  onclick="speak('unit3/61-why-do-we-have-different.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 276px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/62-as-our-planet.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 296px;left: 310px;">
+                <button class="word-btn"  onclick="speak('unit3/63-this-helps-create.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 296px;left: 530px;">
+                <button class="word-btn"  onclick="speak('unit3/64-at-different-times.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 329px;left: 110px;">
+                <button class="word-btn"  onclick="speak('unit3/65-more-sunlight-means.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 346px;left: 270px;">
+                <button class="word-btn"  onclick="speak('unit3/66-it-gets-colder.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 384px;left: 120px;">
+                <button class="word-btn"  onclick="speak('unit3/67-the-seasons-fall.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 418px;left: 180px;">
+                <button class="word-btn"  onclick="speak('unit3/68-china-is-north.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 436px;left: 210px;">
+                <button class="word-btn"  onclick="speak('unit3/69-here-we-experience.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 469px;left: 110px;">
+                <button class="word-btn"  onclick="speak('unit3/70-south-of-the-equator.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 504px;left: 180px;">
+                <button class="word-btn"  onclick="speak('unit3/71-in-australia-it.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 595px;left: 130px;">
+                <button class="word-btn"  onclick="speak('unit3/72-the-hottest-and.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 609px;left: 250px;">
+                <button class="word-btn"  onclick="speak('unit3/73-it-is-always.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 609px;left: 493px;">
+                <button class="word-btn"  onclick="speak('unit3/75-these-places-are.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 296px;left: 310px;">
+                <button class="word-btn"  onclick="speak('unit3/76-instead-of-our-four.mp3')"></button>
+            </div>
+            <div class="sentence" style="top: 646px;left: 200px;">
+                <button class="word-btn"  onclick="speak('unit3/77-around-the-north.mp3')"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -20,6 +20,13 @@
     margin-top: 20px; */
 }
 
+.book-content{
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
 .book-content img{
     position: relative;
     width: 800px;
